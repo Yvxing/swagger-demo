@@ -43,7 +43,9 @@ public class SwaggerController {
             @ApiImplicitParam(paramType = "query",name = "id",value = "品牌名称",required = true,dataType = "String")
     })
     public List<TbBrand> findOne(long id){
+        System.out.println(1524);
         return brandService.findOne(id);
+
     }
 
 }
